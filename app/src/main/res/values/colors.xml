@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="header_bg">#1E3A5F</color>
+    <color name="header_text">#FFFFFF</color>
+    <color name="row_alt">#E5ECF3</color>
+    <color name="row_normal">#FFFFFF</color>
+    <color name="accent">#2E7D32</color>
+    <color name="mic_active">#C62828</color>
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#555555</color>
+    <color name="input_bg">#FFFFFF</color>
+    <color name="input_border">#B0BEC5</color>
+    <color name="screen_bg">#FFFFFF</color>
+</resources>

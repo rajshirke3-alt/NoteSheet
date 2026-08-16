@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Explicitly a LIGHT theme (not DayNight) so text and row colors stay
+         consistent even when the phone is set to system dark mode. Every
+         background in this app is hardcoded light, so letting the theme
+         switch to dark automatically was making default (light) text
+         invisible against light backgrounds, and vice versa. -->
+    <style name="Theme.NoteSheet" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/header_bg</item>
+        <item name="colorPrimaryDark">@color/header_bg</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/screen_bg</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+    </style>
+</resources>

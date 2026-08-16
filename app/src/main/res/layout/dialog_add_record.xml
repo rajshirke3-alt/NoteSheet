@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/screen_bg"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvDateDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/etBed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bed Number"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"
+        android:background="@drawable/bg_input_box"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Patient Name"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"
+        android:background="@drawable/bg_input_box"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etConsultant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Primary Consultant"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"
+        android:background="@drawable/bg_input_box"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Details"
+        android:minLines="3"
+        android:gravity="top"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"
+        android:background="@drawable/bg_input_box"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/tvLiveTranscript"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textStyle="italic"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="14dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnMic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/header_text"
+            android:backgroundTint="@color/accent"
+            android:text="🎤 Start Recording" />
+
+        <Button
+            android:id="@+id/btnStopMic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/header_text"
+            android:backgroundTint="@color/mic_active"
+            android:text="Stop"
+            android:enabled="false" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:textColor="@color/header_text"
+        android:backgroundTint="@color/header_bg"
+        android:text="Save Record" />
+
+</LinearLayout>
+</ScrollView>
